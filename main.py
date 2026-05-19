@@ -14,12 +14,12 @@ class TodoApp(QWidget):
         self.main_layout.setContentsMargins(20, 20, 20, 20)
         self.main_layout.setSpacing(15)
 
-        # 1. Başlık
+        
         self.title_label = QtWidgets.QLabel("Yapılacaklar Listesi", self)
         self.title_label.setStyleSheet("color: #ffffff; font-size: 24px; font-weight: bold; background: transparent;")
         self.main_layout.addWidget(self.title_label)
 
-        # 2. Üst Taraf: Görev Ekleme Alanı
+        
         self.input_layout = QtWidgets.QHBoxLayout()
         self.input_layout.setSpacing(10)
 
@@ -63,7 +63,7 @@ class TodoApp(QWidget):
 
         self.main_layout.addLayout(self.input_layout)
 
-        # 3. Alt Taraf: Kaydırılabilir Liste Alanı
+        
         self.scroll_area = QtWidgets.QScrollArea(self)
         self.scroll_area.setWidgetResizable(True)
         self.scroll_area.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -89,12 +89,12 @@ class TodoApp(QWidget):
         item_layout.setContentsMargins(15, 0, 10, 0) # Sol marjı yazı için biraz genişlettim
         item_layout.setSpacing(10)
 
-        # Görev Metni (CheckBox kaldırıldığı için doğrudan en soldan başlıyor)
+        
         label = QtWidgets.QLabel(text, task_widget)
         label.setStyleSheet("border: none; background: transparent; color: #ffffff; font-size: 14px;")
         item_layout.addWidget(label, 1)
 
-        # Silme Butonu (✕)
+       
         delete_btn = QtWidgets.QPushButton("✕", task_widget)
         delete_btn.setFixedWidth(30)
         delete_btn.setStyleSheet("""
