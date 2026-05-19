@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/OLACAK">/Users/emir/flutter_learn/Qt_project/OLACAK/build/Qt_6_11_1_for_macOS-Debug/OLACAK</file>
+
+  </qresource>
+</RCC>
